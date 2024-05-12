@@ -1,5 +1,6 @@
 body{
-    margin: 0;
+    margin: 0px 50px;
+    background-color: #4c1c23;
     font-family: "Roboto", sans-serif;
 }
 .hero{
@@ -8,6 +9,7 @@ body{
     height: 100vh;
     display: flex;
     font-family: "Anton", sans-serif
+     
 }
 .korobka{
     align-items: center;
@@ -22,6 +24,7 @@ h1{
     line-height: 120px;
     margin: 20px 0;
     font-size: 5rem;
+  
 }
 h2{
     font-size: 2rem;
@@ -36,9 +39,10 @@ h3{
 
 .photo{
     width: 60%;
-    border: 20px solid #C7B7A3;
+    border: 15px solid #C7B7A3;
     rotate: -4deg;
     box-shadow: 20px 20px 20px 0 #561C24;
+    border-radius: 5%;
 }
 .prizrak{
     z-index: 5;
@@ -49,4 +53,106 @@ h3{
    height: 1px;
    background-color: white;
     box-shadow: 0 0 300px 100px white;
+}
+.emp1{
+    White-space: nowrap;
+    margin-right:20px;
+}
+.emp2{
+    White-space: nowrap;
+}
+
+.danelpridumala{
+
+margin-bottom: 100%;
+
+
+}
+
+
+
+
+
+
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: var(--primary-color);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: var(--text-color);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: var(--primary-color);
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: var(--card-color);
+    padding: 15px;
+    margin: 15px 0;
+    color: var(--text-color);
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: var(--card-color);
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav.fas{
+    display: none;
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
