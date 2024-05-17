@@ -1,7 +1,16 @@
+body { 
+    --body-color: #FFEBB2;
+    --accent-color: #E59BE9;
+    --secondary-color: #b54769;
+    --text-color: rgb(0, 0, 0);
+    --card-color: #262626;
+    --primary-color: white;
+}
 body{
     margin: 0px 50px;
     background-color: #4c1c23;
     font-family: "Roboto", sans-serif;
+    nav-right: auto;
 }
 .hero{
     background-color: 6D2932;
@@ -11,6 +20,15 @@ body{
     font-family: "Anton", sans-serif
      
 }
+.skills {
+    background-color: 6D2932;
+    color: #E8D8C4;
+    height: 100vh;
+    display: flex;
+    font-family: "Anton", sans-serif;
+    justify-content: space-between;
+}
+
 .korobka{
     align-items: center;
     justify-content: center;
@@ -36,6 +54,10 @@ h3{
     margin: 0;
     font-weight: 400;
 }
+h4{
+    text-align: center;
+
+}
 
 .photo{
     width: 60%;
@@ -48,10 +70,10 @@ h3{
     z-index: 5;
     top: 500px;
     right:300px;
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   background-color: white;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: white;
     box-shadow: 0 0 300px 100px white;
 }
 .emp1{
@@ -63,96 +85,135 @@ h3{
 }
 
 .danelpridumala{
-
 margin-bottom: 100%;
-
-
 }
 
-
-
-
-
-
-
-.contact-left{
-    flex-basis: 35%;
-}
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: var(--primary-color);
-    margin-right: 15px;
-    font-size: 25px;
-}
-.social-icons{
-    margin-top: 30px;
-}
-.social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: var(--text-color);
-    display: inline-block;
-    transition: transform 0.5s;
-}
-.social-icons a:hover{
-    color: var(--primary-color);
-    transform: translateY(-5px);
-}
-.btn.btn2{
-    display: inline-block;
-    background: var(--primary-color);
-}
-.contact-right form{
+header {
+    background-color: #f0f0f0;
+    color: #7e2c5c;
+    padding: 10px ;
+    position: fixed ;
     width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: var(--card-color);
-    padding: 15px;
-    margin: 15px 0;
-    color: var(--text-color);
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: var(--card-color);
-    font-weight: 300;
-    margin-top: 20px;
-}
-.copyright i{
-    color: white;
-}
-.row{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.container{
-    padding: 10px 10%;
 }
 
-nav.fas{
-    display: none;
+.logo{        
+    width: 100%;      
+    height: 200px;      
+    background-color: #296D64;        
+    display: flex;   ;
+    overflow: hidden;  
 }
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
+nav{ 
+    height: 80px; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 20%;
+} 
+.link{ 
+    font-size: 25px; 
+    margin-left: 100px; 
+    cursor: pointer; 
+    transition-duration: 0.2s; 
+} 
+.link:hover{ 
+    color: #5a5a5a; 
+}
+
+.a{
+    line-height: 50px;    
+    height: 100%;      
+    font-size: 15px;    
+    display:inline-flex;      
+    position: relative;    
+    z-index: 1;      
+    text-decoration: none;    
+    text-transform: uppercase;      
+    text-align: center;    
+    color: #000000;      
+    cursor: pointer;    
+}      
+    
+.animation {    
+    position: absolute;      
+    width: 100%;    
+    top: 0;    
+    z-index: 0;      
+    transition: all .5s ease 0s;    
+    border-radius: 8px;   
+}
+.contact-left{ 
+    flex-basis: 35%; 
+} 
+.contact-right{ 
+    flex-basis: 60%; 
+} 
+.contact-left p{ 
+    margin-top: 30px; 
+} 
+.contact-left p i{ 
+    color: var(--primary-color); 
+    margin-right: 15px; 
+    font-size: 25px; 
+} 
+.social-icons{ 
+    margin-top: 30px; 
+} 
+.social-icons a{ 
+    text-decoration: none; 
+    font-size: 30px; 
+    margin-right: 15px; 
+    color: var(--text-color); 
+    display: inline-block; 
+    transition: transform 0.5s; 
+} 
+.social-icons a:hover{ 
+    color: var(--primary-color); 
+    transform: translateY(-5px); 
+} 
+.btn.btn2{ 
+    display: inline-block; 
+    background: var(--primary-color); 
+} 
+.contact-right form{ 
+    width: 100%; 
+} 
+form input, form textarea{ 
+    width: 100%; 
+    border: 0; 
+    outline: none; 
+    background: var(--card-color); 
+    padding: 15px; 
+    margin: 15px 0; 
+    color: white; 
+    font-size: 18px; 
+    border-radius: 6px; 
+} 
+form .btn2{ 
+    padding: 14px 60px; 
+    font-size: 18px; 
+    margin-top: 20px; 
+    cursor: pointer; 
+} 
+.copyright{ 
+    width: 100%; 
+    text-align: center; 
+    padding: 25px 0; 
+    background: var(--card-color); 
+    font-weight: 300; 
+    margin-top: 20px; 
+} 
+.copyright i{ 
+    color: rgb(232, 171, 171); 
+} 
+.row{ 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+} 
+.container{ 
+    padding: 10px 10%; 
+} 
+nav.fas{ 
+    display: none; 
 }
