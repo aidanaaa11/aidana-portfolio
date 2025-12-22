@@ -5,35 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aidana | Portfolio</title>
-    
+
     <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    
+
 </head>
 <body>
-    <!-- НОВАЯ СЕКЦИЯ: ЗАГОЛОВОК ПОРТФОЛИО -->
-    <section class="portfolio-header-section">
-        <div class="design-label">Design & Visual</div>
-        
-        <div class="portfolio-main">
-            <h1 class="portfolio-title">Portfolio</h1>
-            <h2 class="portfolio-subtitle">Aidana's Creative Universe</h2>
-            
-            <a href="https://instagram.com/grazhdanka.interneta" target="_blank" class="instagram-handle-large">
-                <i class="fab fa-instagram"></i> @grazhdanka.interneta
+    <!-- 1. ЗАГОЛОВОК ПОРТФОЛИО -->
+    <section class="portfolio-header" id="home">
+        <div class="header-top">
+            <div class="design-label">Design & Visual</div>
+            <a href="https://instagram.com/grazhdanka.interneta" class="instagram-handle" target="_blank">
+                @grazhdanka.interneta
             </a>
         </div>
         
-        <!-- Цветовая палитра из дизайна -->
+        <h1 class="portfolio-title">Portfolio</h1>
+        <h2 class="portfolio-subtitle">Aidana's Creative Universe</h2>
+        
         <div class="color-palette">
             <div class="color-block color-crimson">
                 Crimson Depth<br>
@@ -43,46 +40,50 @@
                 Warm Sand<br>
                 HEX #F2F1ED
             </div>
+            <div class="color-block color-pearl">
+                Soft Pearl<br>
+                HEX #FAF9F5
+            </div>
         </div>
     </section>
 
-    <!-- НАВИГАЦИЯ -->
-    <nav class="main-navigation">
+    <!-- 2. НАВИГАЦИЯ -->
+    <nav class="main-nav">
         <div class="nav-container">
-            <div class="nav-menu-main">
-                <div class="nav-item">
-                    <a href="#about" class="nav-link-main">About</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#skills" class="nav-link-main">Skills</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#blog" class="nav-link-main">Blog</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#projects" class="nav-link-main">Portfolio</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#contact" class="nav-link-main">Shop</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#contact" class="nav-link-main">Contact me</a>
-                </div>
-            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact me</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <!-- ABOUT SECTION - КОМПЛЕТНО ПЕРЕРАБОТАН -->
+    <!-- 3. ABOUT ME -->
     <section id="about">
         <div class="about-container">
-            <div class="about-image-wrapper">
+            <div class="about-image-container">
                 <img src="photo.jpg" alt="Aidana" class="about-image">
             </div>
             
             <div class="about-content">
-                <h2 class="section-title-main">About Me</h2>
+                <h2 class="section-title">About Me</h2>
                 
-                <p class="about-text-main">
+                <p class="about-text">
                     I am a versatile and creative person. I have practiced equestrian sports, 
                     swimming, acrobatics, and aikido, which helped me develop discipline, 
                     endurance, and self-control. I plan to apply to an architecture program 
@@ -96,245 +97,232 @@
                     behind serious crimes.
                 </p>
                 
-                <div class="about-highlights">
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
                             <i class="fas fa-horse"></i>
                         </div>
-                        <h3 class="highlight-title">Equestrian Sports</h3>
+                        <h3 class="feature-title">Equestrian Sports</h3>
                         <p>Professional training and competition experience</p>
                     </div>
                     
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
+                    <div class="feature-card">
+                        <div class="feature-icon">
                             <i class="fas fa-paint-brush"></i>
                         </div>
-                        <h3 class="highlight-title">Visual Arts</h3>
-                        <p>Painting, drawing, and decorative crafts</p>
+                        <h3 class="feature-title">Visual Arts</h3>
+                        <p>Painting, drawing and decorative crafts</p>
                     </div>
                     
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
+                    <div class="feature-card">
+                        <div class="feature-icon">
                             <i class="fas fa-brain"></i>
                         </div>
-                        <h3 class="highlight-title">Psychology & Criminology</h3>
+                        <h3 class="feature-title">Psychology & Criminology</h3>
                         <p>Deep analysis of human and animal behavior</p>
                     </div>
                     
-                    <div class="highlight-item">
-                        <div class="highlight-icon">
+                    <div class="feature-card">
+                        <div class="feature-icon">
                             <i class="fas fa-drafting-compass"></i>
                         </div>
-                        <h3 class="highlight-title">Architecture</h3>
-                        <p>Interest in form, space, and visual thinking</p>
+                        <h3 class="feature-title">Architecture</h3>
+                        <p>Interest in form, space and visual thinking</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS SECTION - БЕЗ ЗВЕЗДОЧЕК, НОВЫЙ ДИЗАЙН -->
+    <!-- 4. SKILLS -->
     <section id="skills">
-        <div class="skills-showcase-new">
-            <h2 class="section-title-main">My Skills & Expertise</h2>
+        <div class="skills-container">
+            <h2 class="section-title">My Skills & Expertise</h2>
             
-            <!-- Категория 1: Физические навыки -->
-            <div class="skills-category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-running"></i>
+            <div class="skills-grid">
+                <!-- Атлетические навыки -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3 class="category-title">Athletic & Physical Skills</h3>
                     </div>
-                    <h3 class="category-title-new">Athletic & Physical Skills</h3>
+                    
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Equestrian Sports</span>
+                            <span class="skill-level">Professional</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Swimming</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Acrobatics</span>
+                            <span class="skill-level">Flexibility</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Aikido</span>
+                            <span class="skill-level">Black Belt</span>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skills-grid-new">
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Equestrian Sports</h4>
-                        <p class="skill-description-new">Professional level horse riding and competition experience</p>
+                <!-- Творческие навыки -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="category-title">Creative & Artistic Skills</h3>
                     </div>
                     
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Swimming</h4>
-                        <p class="skill-description-new">Advanced technique and endurance training</p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Visual Arts</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Handicrafts</span>
+                            <span class="skill-level">Creative</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Architectural Design</span>
+                            <span class="skill-level">Developing</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Aesthetic Design</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
                     </div>
-                    
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Acrobatics</h4>
-                        <p class="skill-description-new">Flexibility, balance, and body control</p>
-                    </div>
-                    
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Aikido</h4>
-                        <p class="skill-description-new">Black belt discipline and martial arts mastery</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Категория 2: Творческие навыки -->
-            <div class="skills-category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3 class="category-title-new">Creative & Artistic Skills</h3>
                 </div>
                 
-                <div class="skills-grid-new">
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Visual Arts</h4>
-                        <p class="skill-description-new">Painting, drawing, and artistic expression</p>
+                <!-- Интеллектуальные навыки -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="category-title">Intellectual & Analytical</h3>
                     </div>
                     
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Handicrafts</h4>
-                        <p class="skill-description-new">Decorative flowers and creative material work</p>
-                    </div>
-                    
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Architectural Design</h4>
-                        <p class="skill-description-new">Form, space, and visual thinking concepts</p>
-                    </div>
-                    
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Aesthetic Design</h4>
-                        <p class="skill-description-new">Visual composition and beauty perception</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Категория 3: Интеллектуальные навыки -->
-            <div class="skills-category">
-                <div class="category-header">
-                    <div class="category-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3 class="category-title-new">Intellectual & Analytical Skills</h3>
-                </div>
-                
-                <div class="skills-grid-new">
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Psychological Analysis</h4>
-                        <p class="skill-description-new">Deep understanding of human behavior</p>
-                    </div>
-                    
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Emotional Intelligence</h4>
-                        <p class="skill-description-new">High empathy and emotional awareness</p>
-                    </div>
-                    
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Criminology</h4>
-                        <p class="skill-description-new">Study of psychological mechanisms in crimes</p>
-                    </div>
-                    
-                    <div class="skill-item-new">
-                        <h4 class="skill-name-new">Animal Psychology</h4>
-                        <p class="skill-description-new">Understanding animal behavior and communication</p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Psychological Analysis</span>
+                            <span class="skill-level">Deep</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Emotional Intelligence</span>
+                            <span class="skill-level">High</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Criminology</span>
+                            <span class="skill-level">Research</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Animal Psychology</span>
+                            <span class="skill-level">Understanding</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- BLOG SECTION -->
+    <!-- 5. PROJECTS -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Portfolio Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image.png" alt="Architectural Concepts" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Architectural Concepts</h3>
+                        <p class="project-description">
+                            Explorations in form, space, and visual thinking. 
+                            Architectural studies focusing on harmony between structure and environment.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Architecture</span>
+                            <span class="tag">Design</span>
+                            <span class="tag">Visual Thinking</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image copy.png" alt="Art Collection" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Visual Arts Collection</h3>
+                        <p class="project-description">
+                            A series of paintings and decorative works exploring beauty in 
+                            details and emotional expression through color and form.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Painting</span>
+                            <span class="tag">Decorative Arts</span>
+                            <span class="tag">Visual Expression</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Psychological Studies" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Psychological Studies</h3>
+                        <p class="project-description">
+                            Research and analysis in psychology and criminology, 
+                            exploring the human mind and behavioral patterns.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Psychology</span>
+                            <span class="tag">Criminology</span>
+                            <span class="tag">Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. BLOG -->
     <section id="blog">
         <div class="blog-container">
-            <div class="blog-header">
-                <h2 class="blog-title-main">A Case Almost Too Disturbing to Mention: Lacey Fletcher</h2>
-                <p class="blog-subtitle">Exploring psychological aspects through criminology and human behavior</p>
-            </div>
+            <h2 class="section-title">My Blog</h2>
             
-            <div class="blog-image-container">
+            <div class="blog-content">
+                <h3 class="blog-title">A Case Almost Too Disturbing to Mention: Lacey Fletcher</h3>
+                <p class="blog-description">
+                    Exploring the psychological aspects of one of the most disturbing cases 
+                    in recent history through the lens of criminology and human behavior.
+                </p>
+                
                 <a href="https://medium.com/@aeb2471/a-case-almost-too-disturbing-to-mention-lacey-fletcher-f469bafab8ce" target="_blank">
-                    <img src="image copy 2.png" alt="Blog Article" class="blog-image-main">
+                    <img src="image copy 2.png" alt="Blog Article" class="blog-image">
                 </a>
-                <p style="margin-top: 2rem; color: var(--crimson); font-style: italic;">
+                
+                <p style="color: var(--crimson); font-style: italic; margin-top: 20px;">
                     Click on the image to read the full article on Medium
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION - НОВЫЙ ДИЗАЙН -->
-    <section id="projects">
-        <h2 class="section-title-main">Portfolio Projects</h2>
-        
-        <div class="projects-gallery-new">
-            <!-- Проект 1 -->
-            <div class="project-card-new">
-                <div class="project-image-container">
-                    <img src="image.png" alt="Architectural Studies" class="project-image-new">
-                    <div class="project-overlay">
-                        <div style="color: white; text-align: center; padding: 2rem;">
-                            <h3 style="font-size: 2rem; margin-bottom: 1rem;">View Project</h3>
-                            <p>Click to explore architectural concepts</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content-new">
-                    <h3 class="project-title-new">Architectural Concepts & Studies</h3>
-                    <p>Explorations in form, space, and visual thinking. Architectural studies focusing on harmony between structure and environment.</p>
-                    <div class="project-tags-new">
-                        <span class="tag-new">Architecture</span>
-                        <span class="tag-new">Design</span>
-                        <span class="tag-new">Visual Thinking</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Проект 2 -->
-            <div class="project-card-new">
-                <div class="project-image-container">
-                    <img src="image copy.png" alt="Art Collection" class="project-image-new">
-                    <div class="project-overlay">
-                        <div style="color: white; text-align: center; padding: 2rem;">
-                            <h3 style="font-size: 2rem; margin-bottom: 1rem;">View Collection</h3>
-                            <p>Explore artistic expressions</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content-new">
-                    <h3 class="project-title-new">Visual Arts Collection</h3>
-                    <p>A series of paintings and decorative works exploring beauty in details and emotional expression through color and form.</p>
-                    <div class="project-tags-new">
-                        <span class="tag-new">Painting</span>
-                        <span class="tag-new">Decorative Arts</span>
-                        <span class="tag-new">Visual Expression</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Проект 3 -->
-            <div class="project-card-new">
-                <div class="project-image-container">
-                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Psychological Studies" class="project-image-new">
-                    <div class="project-overlay">
-                        <div style="color: white; text-align: center; padding: 2rem;">
-                            <h3 style="font-size: 2rem; margin-bottom: 1rem;">View Research</h3>
-                            <p>Explore psychological analysis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content-new">
-                    <h3 class="project-title-new">Psychological & Criminology Studies</h3>
-                    <p>Research and analysis in psychology and criminology, exploring human mind and behavioral patterns through visual narratives.</p>
-                    <div class="project-tags-new">
-                        <span class="tag-new">Psychology</span>
-                        <span class="tag-new">Criminology</span>
-                        <span class="tag-new">Behavioral Analysis</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
+    <!-- 7. CONTACT -->
     <section id="contact">
-        <h2 class="section-title-main">Contact Me</h2>
+        <h2 class="section-title">Contact Me</h2>
         
         <div class="contact-content">
-            <div>
-                <div class="contact-info-item">
+            <div class="contact-info">
+                <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
@@ -344,7 +332,7 @@
                     </div>
                 </div>
                 
-                <div class="contact-info-item">
+                <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
@@ -353,9 +341,115 @@
                         <p>+7 701 248 4220</p>
                     </div>
                 </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Nur-Sultan, Kazakhstan</p>
+                    </div>
+                </div>
             </div>
             
             <div>
-                <div class="contact-info-item">
-                    <div class="
+                <h3 style="color: var(--gold-accent); margin-bottom: 20px; font-size: 1.5rem;">Connect With Me</h3>
+                <p style="margin-bottom: 30px;">Feel free to reach out for collaborations, questions, or just to say hello!</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/aidanaaa11" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://t.me/aidanaloves" target="_blank" class="social-link">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/aidana_loves_her_cat" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://medium.com/@aeb2471" target="_blank" class="social-link">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <script>
+        // Активация навигационных ссылок при скролле
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Плавный скролл для навигации
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Анимация карточек при появлении
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Анимируем карточки
+        document.querySelectorAll('.skill-category, .project-card, .feature-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+        
+        // Инициализация - показываем карточки
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelectorAll('.skill-category, .project-card, .feature-card').forEach(card => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                });
+            }, 300);
+        });
+    </script>
+</body>
+</html>
