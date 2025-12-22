@@ -1,4 +1,4 @@
-/* Color scheme - ваши цвета */
+/* Color scheme */
 :root {
     --deep-wine: #340c0c;
     --medium-wine: #5a1a1a;
@@ -174,19 +174,21 @@ h3 i {
     border-left: 4px solid var(--warm-beige);
 }
 
-/* Skills Section - ТРИ КОЛОНКИ В РЯД */
+/* Skills Section - ТРИ РАВНЫХ КОЛОНКИ */
 .skills-container {
-    width: 100%;
-    max-width: 1400px;
-    padding: 0 100px;
-    text-align: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 80vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .skills-three-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .skill-column {
@@ -365,7 +367,7 @@ h3 i {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Social Icons - ОБНОВЛЕННЫЕ С ЕДИНЫМ СТИЛЕМ */
+/* Social Icons - ОБНОВЛЕННЫЙ СТИЛЬ */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -453,10 +455,6 @@ section {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
-    
-    .skills-container {
-        padding: 0 50px;
-    }
 }
 
 @media (max-width: 992px) {
@@ -483,13 +481,6 @@ section {
     
     .skills-three-columns {
         grid-template-columns: repeat(2, 1fr);
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .skills-container {
-        padding: 0 30px;
     }
     
     .contact-left, .contact-right {
@@ -532,6 +523,8 @@ section {
     .skills-three-columns {
         grid-template-columns: 1fr;
         max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .about-text {
@@ -579,10 +572,6 @@ section {
         padding: 0 15px;
     }
     
-    .skills-container {
-        padding: 0 15px;
-    }
-    
     .about-text {
         font-size: 1rem;
         padding: 15px;
@@ -608,18 +597,5 @@ section {
     .social-icons {
         gap: 25px;
         padding: 20px;
-    }
-    
-    .social-icon-circle {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .social-icon-circle i {
-        font-size: 25px;
-    }
-    
-    .social-text {
-        font-size: 1.1rem;
     }
 }
