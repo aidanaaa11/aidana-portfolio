@@ -26,32 +26,23 @@
 
     <!-- Home Section -->
     <section id="home" class="hero">  
-        <div class="home-content">
-            <div class="main-title-container">
+        <div class="korobka">
+            <div class="home-content">
                 <h1>Hello!</h1>
                 <h2>My name is Aidana. I study at NSPM</h2>
                 <p class="intro-text">A creative mind exploring arts, sports, and psychology</p>
-                
-                <!-- Добавленный текст внизу секции -->
-                <div class="bottom-text">
-                    <div class="text-line">
-                        <span class="highlight">Design & Visual</span>
-                        <span class="separator">•</span>
-                        <span class="highlight">Portfolio</span>
-                    </div>
-                    <p class="sub-line">Exploring creativity through multiple disciplines</p>
-                </div>
             </div>
         </div>
-        
-        <div class="photo-container">
-            <img class="photo" src="image.jpg" alt="Aidana's Photo">
+        <div class="korobka">
+            <div class="simple-frame">
+                <img class="photo" src="image.jpg" alt="Aidana's Photo">
+            </div>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="aboutme" class="hero">
-        <div class="about-section">
+        <div class="korobka about-section">
             <div class="about-content">
                 <h1>About me</h1>
                 <p class="about-text">
@@ -71,7 +62,7 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section - ТРИ КОЛОНКИ В РЯД -->
     <section id="skills" class="skills">
         <div class="skills-container">
             <h1>My skills</h1>
@@ -79,7 +70,7 @@
                 <!-- Column 1 -->
                 <div class="skill-column">
                     <div class="skill-category">
-                        <h3>Athletic Skills</h3>
+                        <h3><i class="fas fa-running"></i> Athletic Skills</h3>
                         <div class="skill-items">
                             <div class="skill-item">Equestrian Sports</div>
                             <div class="skill-item">Swimming</div>
@@ -92,7 +83,7 @@
                 <!-- Column 2 -->
                 <div class="skill-column">
                     <div class="skill-category">
-                        <h3>Creative Skills</h3>
+                        <h3><i class="fas fa-paint-brush"></i> Creative Skills</h3>
                         <div class="skill-items">
                             <div class="skill-item">Visual Arts & Painting</div>
                             <div class="skill-item">Handicrafts & Design</div>
@@ -105,7 +96,7 @@
                 <!-- Column 3 -->
                 <div class="skill-column">
                     <div class="skill-category">
-                        <h3>Analytical Skills</h3>
+                        <h3><i class="fas fa-brain"></i> Analytical Skills</h3>
                         <div class="skill-items">
                             <div class="skill-item">Psychological Analysis</div>
                             <div class="skill-item">Emotional Intelligence</div>
@@ -120,54 +111,18 @@
 
     <!-- Blog Section -->
     <section id="myblog" class="hero">
-        <div class="blog-container">
-            <div class="blog-header">
-                <h1>My Blog</h1>
-                <div class="blog-subtitle">
-                    <span>Exploring Psychology & Criminology</span>
-                </div>
-            </div>
-            
-            <div class="blog-card">
-                <div class="blog-image-container">
-                    <a href="https://medium.com/@aeb2471/a-case-almost-too-disturbing-to-mention-lacey-fletcher-f469bafab8ce" target="_blank">
-                        <img src="image copy 2.png" alt="Blog Article" class="blog-image">
-                        <div class="blog-overlay">
-                            <span class="read-article">Read Article</span>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="blog-content">
-                    <h2 class="blog-title">A Case Almost Too Disturbing to Mention: Lacey Fletcher</h2>
-                    
-                    <div class="blog-meta">
-                        <span class="meta-item">Psychology</span>
-                        <span class="meta-item">Criminology</span>
-                        <span class="meta-item">10 min read</span>
-                    </div>
-                    
-                    <p class="blog-description">
-                        An in-depth exploration of one of the most disturbing criminal cases 
-                        in recent history, analyzing the psychological aspects and human 
-                        behavior patterns through the lens of modern criminology.
-                    </p>
-                    
-                    <div class="blog-actions">
-                        <a href="https://medium.com/@aeb2471/a-case-almost-too-disturbing-to-mention-lacey-fletcher-f469bafab8ce" 
-                           target="_blank" 
-                           class="blog-button">
-                            Read on Medium
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="korobka">
+            <h1>My blog</h1>
+            <h2>This is my article on Medium</h2>
+            <a href="https://medium.com/@aeb2471/a-case-almost-too-disturbing-to-mention-lacey-fletcher-f469bafab8ce" target="_blank">
+                <img src="image copy 2.png" alt="Blog Article">
+            </a>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="myprojects" class="hero">
-        <div class="projects-container">
+        <div class="korobka">
             <div>
                 <h1>My projects</h1>
                 <h2>These are my diplomas and certificates</h2>
@@ -179,38 +134,46 @@
         </div>
     </section>
 
-    <!-- Contact Section - БЕЗ КОРОБКИ -->
-    <section id="contactme" class="contact-section">
-        <div class="contact-content">
-            <h1 class="contact-title">Contact Me</h1>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-label">Email:</span>
-                    <span class="contact-value">aidana.omirkhanova27@fizmat.kz</span>
-                </div>
-                
-                <div class="contact-item">
-                    <span class="contact-label">Phone:</span>
-                    <span class="contact-value">8 701 248 4220</span>
-                </div>
+    <!-- Contact Section -->
+    <section id="contactme" class="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> aidana.omirkhanova27@fizmat.kz</p>
+                <p><i class="fas fa-phone-square-alt"></i> 8 701 248 4220</p>
             </div>
-            
-            <form class="contact-form" name="submit-to-google-sheet">
-                <div class="form-group">
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                </div>
-                
-                <div class="form-group">
                     <input type="email" name="Email" placeholder="Your Email" required>
-                </div>
-                
-                <div class="form-group">
                     <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Social Icons with matching style -->
+        <div class="social-icons">
+            <a href="https://github.com/aidanaaa11" target="_blank" class="social-link">
+                <div class="social-icon-circle">
+                    <i class="fab fa-github"></i>
                 </div>
-                
-                <button type="submit">Send Message</button>
-            </form>
+                <span class="social-text">GitHub</span>
+            </a>
+            
+            <a href="https://t.me/aidanaloves" target="_blank" class="social-link">
+                <div class="social-icon-circle">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <span class="social-text">Telegram</span>
+            </a>
+            
+            <a href="https://www.instagram.com/aidana_loves_her_cat" target="_blank" class="social-link">
+                <div class="social-icon-circle">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <span class="social-text">Instagram</span>
+            </a>
         </div>
     </section>
 
