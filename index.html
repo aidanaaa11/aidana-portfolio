@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aidana Site</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
     <header>
         <nav>
             <a href="#home" class="link">Home</a>     
@@ -27,71 +27,216 @@
     <!-- Home Section -->
     <section id="home" class="hero">  
         <div class="korobka">
-            <div>
+            <div class="home-content">
+                <h1>Hello!</h1>
                 <h2>My name is Aidana. I study at NSPM</h2>
-                <h1>Hello! Welcome to my site!</h1>
-                <p class="portfolio-tag">Design & Visual Portfolio</p>
+                <div class="design-tag">
+                    <span class="tag-line">Design & Visual</span>
+                    <span class="tag-line">Portfolio</span>
+                </div>
             </div>
         </div>
         <div class="korobka">
-            <img class="photo" src="photo.jpg" alt="Aidana's Photo">
+            <div class="photo-frame">
+                <div class="frame-decor frame-1"></div>
+                <div class="frame-decor frame-2"></div>
+                <div class="frame-decor frame-3"></div>
+                <div class="frame-decor frame-4"></div>
+                <img class="photo" src="photo.jpg" alt="Aidana's Photo">
+            </div>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="aboutme" class="hero">
         <div class="korobka">
-            <div>
-                <h1>About me</h1>
-                <p class="about-text">
-                    I am a versatile and creative person. I have practiced equestrian sports, 
-                    swimming, acrobatics, and aikido, which helped me develop discipline, 
-                    endurance, and self-control. I plan to apply to an architecture program 
-                    because I am interested in form, space, and visual thinking. 
-                    I enjoy creating things by hand, including decorative flowers made from 
-                    different materials. I am interested in studying animals and tend to notice 
-                    beauty in details and in the world around me. I am drawn to psychological 
-                    analysis, I am emotionally aware and empathetic, and I can deeply understand 
-                    people and animals. I am also interested in mysticism and criminology, 
-                    particularly in how the human mind works and the psychological mechanisms 
-                    behind serious crimes.
-                </p>
+            <div class="about-container">
+                <div class="about-header">
+                    <h1>About me</h1>
+                </div>
+                
+                <div class="about-main-content">
+                    <div class="about-text-container">
+                        <p class="about-text">
+                            I am a versatile and creative person. I have practiced equestrian sports, 
+                            swimming, acrobatics, and aikido, which helped me develop discipline, 
+                            endurance, and self-control. I plan to apply to an architecture program 
+                            because I am interested in form, space, and visual thinking. 
+                            I enjoy creating things by hand, including decorative flowers made from 
+                            different materials. I am interested in studying animals and tend to notice 
+                            beauty in details and in the world around me. I am drawn to psychological 
+                            analysis, I am emotionally aware and empathetic, and I can deeply understand 
+                            people and animals. I am also interested in mysticism and criminology, 
+                            particularly in how the human mind works and the psychological mechanisms 
+                            behind serious crimes.
+                        </p>
+                    </div>
+                    
+                    <div class="about-key-points">
+                        <div class="key-point">
+                            <i class="fas fa-horse key-point-icon"></i>
+                            <h3 class="key-point-title">Athletic Background</h3>
+                            <p class="key-point-desc">Equestrian sports, swimming, acrobatics, and aikido practitioner</p>
+                        </div>
+                        
+                        <div class="key-point">
+                            <i class="fas fa-paint-brush key-point-icon"></i>
+                            <h3 class="key-point-title">Creative Pursuits</h3>
+                            <p class="key-point-desc">Visual arts, handicrafts, and architectural design</p>
+                        </div>
+                        
+                        <div class="key-point">
+                            <i class="fas fa-brain key-point-icon"></i>
+                            <h3 class="key-point-title">Analytical Mind</h3>
+                            <p class="key-point-desc">Psychological analysis, criminology, and emotional intelligence</p>
+                        </div>
+                        
+                        <div class="key-point">
+                            <i class="fas fa-eye key-point-icon"></i>
+                            <h3 class="key-point-title">Observant Nature</h3>
+                            <p class="key-point-desc">Notices beauty in details and studies animal behavior</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section - БЕЗ ЗВЕЗДОЧЕК -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div class="korobka">
-            <h1>My skills</h1>
-            <div class="skills-container">
+        <div class="korobka skills-main">
+            <h1 class="skills-title">My skills</h1>
+            
+            <div class="skills-showcase">
+                <!-- Physical Skills -->
                 <div class="skill-category">
-                    <h2>Athletic Skills</h2>
-                    <div class="skill-list">
-                        <div class="skill-item">Equestrian Sports</div>
-                        <div class="skill-item">Swimming</div>
-                        <div class="skill-item">Acrobatics</div>
-                        <div class="skill-item">Aikido</div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3 class="category-name">Physical & Athletic</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Equestrian Sports</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Swimming</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Acrobatics</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Aikido</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
+                <!-- Creative Skills -->
                 <div class="skill-category">
-                    <h2>Creative Skills</h2>
-                    <div class="skill-list">
-                        <div class="skill-item">Visual Arts & Painting</div>
-                        <div class="skill-item">Handicrafts & Design</div>
-                        <div class="skill-item">Architectural Thinking</div>
-                        <div class="skill-item">Aesthetic Design</div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="category-name">Creative & Artistic</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Visual Arts</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Handicrafts</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Architecture</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Aesthetic Design</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
+
+                <!-- Analytical Skills -->
                 <div class="skill-category">
-                    <h2>Analytical Skills</h2>
-                    <div class="skill-list">
-                        <div class="skill-item">Psychological Analysis</div>
-                        <div class="skill-item">Emotional Intelligence</div>
-                        <div class="skill-item">Criminology Studies</div>
-                        <div class="skill-item">Animal Psychology</div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="category-name">Analytical & Intellectual</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Psychological Analysis</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Emotional Intelligence</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Criminology</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-details">
+                                <span class="skill-name">Animal Psychology</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" style="width: 82%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,14 +261,18 @@
                 <h1>My projects</h1>
                 <h2>These are my diplomas and certificates</h2>
                 <div class="projects-grid">
-                    <img src="image.png" alt="Diploma 1">
-                    <img src="image copy.png" alt="Diploma 2">
+                    <div class="project-item">
+                        <img src="image.png" alt="Diploma 1">
+                    </div>
+                    <div class="project-item">
+                        <img src="image copy.png" alt="Diploma 2">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section - ВАШ ИЗНАЧАЛЬНЫЙ ДИЗАЙН -->
+    <!-- Contact Section -->
     <section id="contactme" class="contact">
         <div class="container">
             <div class="contact-left">
@@ -153,23 +302,8 @@
         </div>
     </section>
 
-    <!-- Указательная штука -->
-    <div class="guide-pointer" onclick="scrollToTop()">
-        <div class="pointer">
-            <i class="fas fa-arrow-up"></i>
-            Scroll to top
-        </div>
-    </div>
-
     <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        // Плавный скролл для навигации
+        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -186,7 +320,7 @@
             });
         });
 
-        // Анимация при загрузке
+        // Animation on load
         document.addEventListener('DOMContentLoaded', function() {
             const sections = document.querySelectorAll('section');
             sections.forEach((section, index) => {
@@ -199,8 +333,41 @@
                     section.style.transform = 'translateY(0)';
                 }, 300 + (index * 100));
             });
+
+            // Animate progress bars
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 800);
+            });
+        });
+
+        // Active navigation link
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.link');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
 </html>
-
