@@ -1,88 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aidana | Portfolio</title>
-
-    <!-- Шрифты -->
+    <title>Aidana Site</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-
 </head>
 <body>
-    <!-- 1. ЗАГОЛОВОК ПОРТФОЛИО -->
-    <section class="portfolio-header" id="home">
-        <div class="header-top">
-            <div class="design-label">Design & Visual</div>
-            <a href="https://instagram.com/grazhdanka.interneta" class="instagram-handle" target="_blank">
-                @grazhdanka.interneta
-            </a>
+    <header>
+        <nav>
+            <a href="#home" class="link">Home</a>     
+            <a href="#aboutme" class="link">About me</a>    
+            <a href="#skills" class="link">My skills</a> 
+            <a href="#myblog" class="link">My blog</a>
+            <a href="#myprojects" class="link">My projects</a> 
+            <a href="#contactme" class="link">Contact Me</a> 
+        </nav>
+    </header> 
+
+    <!-- Home Section -->
+    <section id="home" class="hero">  
+        <div class="korobka">
+            <div>
+                <h2>My name is Aidana. I study at NSPM</h2>
+                <h1>Hello! Welcome to my site!</h1>
+                <p class="portfolio-tag">Design & Visual Portfolio</p>
+            </div>
         </div>
-        
-        <h1 class="portfolio-title">Portfolio</h1>
-        <h2 class="portfolio-subtitle">Aidana's Creative Universe</h2>
-        
-        <div class="color-palette">
-            <div class="color-block color-crimson">
-                Crimson Depth<br>
-                HEX #710014
-            </div>
-            <div class="color-block color-sand">
-                Warm Sand<br>
-                HEX #F2F1ED
-            </div>
-            <div class="color-block color-pearl">
-                Soft Pearl<br>
-                HEX #FAF9F5
-            </div>
+        <div class="korobka">
+            <img class="photo" src="photo.jpg" alt="Aidana's Photo">
         </div>
     </section>
 
-    <!-- 2. НАВИГАЦИЯ -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link active">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#blog" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Shop</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- 3. ABOUT ME -->
-    <section id="about">
-        <div class="about-container">
-            <div class="about-image-container">
-                <img src="photo.jpg" alt="Aidana" class="about-image">
-            </div>
-            
-            <div class="about-content">
-                <h2 class="section-title">About Me</h2>
-                
+    <!-- About Me Section -->
+    <section id="aboutme" class="hero">
+        <div class="korobka">
+            <div>
+                <h1>About me</h1>
                 <p class="about-text">
                     I am a versatile and creative person. I have practiced equestrian sports, 
                     swimming, acrobatics, and aikido, which helped me develop discipline, 
@@ -96,359 +55,149 @@
                     particularly in how the human mind works and the psychological mechanisms 
                     behind serious crimes.
                 </p>
-                
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-horse"></i>
-                        </div>
-                        <h3 class="feature-title">Equestrian Sports</h3>
-                        <p>Professional training and competition experience</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h3 class="feature-title">Visual Arts</h3>
-                        <p>Painting, drawing and decorative crafts</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3 class="feature-title">Psychology & Criminology</h3>
-                        <p>Deep analysis of human and animal behavior</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-drafting-compass"></i>
-                        </div>
-                        <h3 class="feature-title">Architecture</h3>
-                        <p>Interest in form, space and visual thinking</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. SKILLS -->
-    <section id="skills">
-        <div class="skills-container">
-            <h2 class="section-title">My Skills & Expertise</h2>
-            
-            <div class="skills-grid">
-                <!-- Атлетические навыки -->
+    <!-- Skills Section - БЕЗ ЗВЕЗДОЧЕК -->
+    <section id="skills" class="skills">
+        <div class="korobka">
+            <h1>My skills</h1>
+            <div class="skills-container">
                 <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-running"></i>
-                        </div>
-                        <h3 class="category-title">Athletic & Physical Skills</h3>
-                    </div>
-                    
+                    <h2>Athletic Skills</h2>
                     <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Equestrian Sports</span>
-                            <span class="skill-level">Professional</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Swimming</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Acrobatics</span>
-                            <span class="skill-level">Flexibility</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Aikido</span>
-                            <span class="skill-level">Black Belt</span>
-                        </div>
+                        <div class="skill-item">Equestrian Sports</div>
+                        <div class="skill-item">Swimming</div>
+                        <div class="skill-item">Acrobatics</div>
+                        <div class="skill-item">Aikido</div>
                     </div>
                 </div>
                 
-                <!-- Творческие навыки -->
                 <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3 class="category-title">Creative & Artistic Skills</h3>
-                    </div>
-                    
+                    <h2>Creative Skills</h2>
                     <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Visual Arts</span>
-                            <span class="skill-level">Expert</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Handicrafts</span>
-                            <span class="skill-level">Creative</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Architectural Design</span>
-                            <span class="skill-level">Developing</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Aesthetic Design</span>
-                            <span class="skill-level">Advanced</span>
-                        </div>
+                        <div class="skill-item">Visual Arts & Painting</div>
+                        <div class="skill-item">Handicrafts & Design</div>
+                        <div class="skill-item">Architectural Thinking</div>
+                        <div class="skill-item">Aesthetic Design</div>
                     </div>
                 </div>
                 
-                <!-- Интеллектуальные навыки -->
                 <div class="skill-category">
-                    <div class="category-header">
-                        <div class="category-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3 class="category-title">Intellectual & Analytical</h3>
-                    </div>
-                    
+                    <h2>Analytical Skills</h2>
                     <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Psychological Analysis</span>
-                            <span class="skill-level">Deep</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Emotional Intelligence</span>
-                            <span class="skill-level">High</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Criminology</span>
-                            <span class="skill-level">Research</span>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Animal Psychology</span>
-                            <span class="skill-level">Understanding</span>
-                        </div>
+                        <div class="skill-item">Psychological Analysis</div>
+                        <div class="skill-item">Emotional Intelligence</div>
+                        <div class="skill-item">Criminology Studies</div>
+                        <div class="skill-item">Animal Psychology</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. PROJECTS -->
-    <section id="projects">
-        <div class="projects-container">
-            <h2 class="section-title">Portfolio Projects</h2>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="image.png" alt="Architectural Concepts" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Architectural Concepts</h3>
-                        <p class="project-description">
-                            Explorations in form, space, and visual thinking. 
-                            Architectural studies focusing on harmony between structure and environment.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Architecture</span>
-                            <span class="tag">Design</span>
-                            <span class="tag">Visual Thinking</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="image copy.png" alt="Art Collection" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Visual Arts Collection</h3>
-                        <p class="project-description">
-                            A series of paintings and decorative works exploring beauty in 
-                            details and emotional expression through color and form.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Painting</span>
-                            <span class="tag">Decorative Arts</span>
-                            <span class="tag">Visual Expression</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Psychological Studies" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Psychological Studies</h3>
-                        <p class="project-description">
-                            Research and analysis in psychology and criminology, 
-                            exploring the human mind and behavioral patterns.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Psychology</span>
-                            <span class="tag">Criminology</span>
-                            <span class="tag">Analysis</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Blog Section -->
+    <section id="myblog" class="hero">
+        <div class="korobka">
+            <h1>My blog</h1>
+            <h2>This is my article on Medium</h2>
+            <a href="https://medium.com/@aeb2471/a-case-almost-too-disturbing-to-mention-lacey-fletcher-f469bafab8ce" target="_blank">
+                <img src="image copy 2.png" alt="Blog Article">
+            </a>
         </div>
     </section>
 
-    <!-- 6. BLOG -->
-    <section id="blog">
-        <div class="blog-container">
-            <h2 class="section-title">My Blog</h2>
-            
-            <div class="blog-content">
-                <h3 class="blog-title">A Case Almost Too Disturbing to Mention: Lacey Fletcher</h3>
-                <p class="blog-description">
-                    Exploring the psychological aspects of one of the most disturbing cases 
-                    in recent history through the lens of criminology and human behavior.
-                </p>
-                
-                <a href="https://medium.com/@aeb2471/a-case-almost-too-disturbing-to-mention-lacey-fletcher-f469bafab8ce" target="_blank">
-                    <img src="image copy 2.png" alt="Blog Article" class="blog-image">
-                </a>
-                
-                <p style="color: var(--crimson); font-style: italic; margin-top: 20px;">
-                    Click on the image to read the full article on Medium
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. CONTACT -->
-    <section id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <p>aidana.omirkhanova27@fizmat.kz</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+7 701 248 4220</p>
-                    </div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Nur-Sultan, Kazakhstan</p>
-                    </div>
-                </div>
-            </div>
-            
+    <!-- Projects Section -->
+    <section id="myprojects" class="hero">
+        <div class="korobka">
             <div>
-                <h3 style="color: var(--gold-accent); margin-bottom: 20px; font-size: 1.5rem;">Connect With Me</h3>
-                <p style="margin-bottom: 30px;">Feel free to reach out for collaborations, questions, or just to say hello!</p>
-                
-                <div class="social-links">
-                    <a href="https://github.com/aidanaaa11" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://t.me/aidanaloves" target="_blank" class="social-link">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="https://www.instagram.com/aidana_loves_her_cat" target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://medium.com/@aeb2471" target="_blank" class="social-link">
-                        <i class="fab fa-medium"></i>
-                    </a>
+                <h1>My projects</h1>
+                <h2>These are my diplomas and certificates</h2>
+                <div class="projects-grid">
+                    <img src="image.png" alt="Diploma 1">
+                    <img src="image copy.png" alt="Diploma 2">
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact Section - ВАШ ИЗНАЧАЛЬНЫЙ ДИЗАЙН -->
+    <section id="contactme" class="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> aidana.omirkhanova27@fizmat.kz</p>
+                <p><i class="fas fa-phone-square-alt"></i> 8 701 248 4220</p>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/aidanaaa11" target="_blank">
+                <img src="github-logo-7880D80B8D-seeklogo.com.png" alt="Github Icon">
+            </a>
+            <a href="https://t.me/aidanaloves" target="_blank">
+                <img src="icons8-telegram-50 (1).png" alt="Telegram Icon">
+            </a>
+            <a href="https://www.instagram.com/aidana_loves_her_cat" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Указательная штука -->
+    <div class="guide-pointer" onclick="scrollToTop()">
+        <div class="pointer">
+            <i class="fas fa-arrow-up"></i>
+            Scroll to top
+        </div>
+    </div>
 
     <script>
-        // Активация навигационных ссылок при скролле
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        
+        }
+
         // Плавный скролл для навигации
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
                 
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
                     window.scrollTo({
-                        top: targetSection.offsetTop - 100,
+                        top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
                 }
             });
         });
-        
-        // Анимация карточек при появлении
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
+
+        // Анимация при загрузке
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section, index) => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                setTimeout(() => {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }, 300 + (index * 100));
             });
-        }, observerOptions);
-        
-        // Анимируем карточки
-        document.querySelectorAll('.skill-category, .project-card, .feature-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'all 0.6s ease-out';
-            observer.observe(card);
-        });
-        
-        // Инициализация - показываем карточки
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                document.querySelectorAll('.skill-category, .project-card, .feature-card').forEach(card => {
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                });
-            }, 300);
         });
     </script>
 </body>
