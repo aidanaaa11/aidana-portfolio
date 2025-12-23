@@ -1,4 +1,3 @@
-/* Color scheme */
 :root {
     --deep-wine: #340c0c;
     --medium-wine: #5a1a1a;
@@ -8,7 +7,6 @@
     --cream: #f5f0eb;
 }
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +20,6 @@ body {
     color: var(--cream);
 }
 
-/* Navigation */
 header {
     background-color: var(--deep-wine);
     padding: 15px 0;
@@ -57,7 +54,6 @@ nav {
     transform: translateY(-2px);
 }
 
-/* Hero sections */
 .hero {
     background: linear-gradient(135deg, var(--deep-wine) 0%, var(--dark-charcoal) 100%);
     color: var(--cream);
@@ -78,7 +74,6 @@ nav {
     padding: 100px 0 50px;
 }
 
-/* Containers */
 .korobka {
     align-items: center;
     justify-content: center;
@@ -90,7 +85,6 @@ nav {
     height: 80vh;
 }
 
-/* Text */
 h1 {
     font-size: 4.5rem;
     color: var(--warm-beige);
@@ -120,7 +114,6 @@ h3 i {
     margin-right: 15px;
 }
 
-/* Home Section */
 .home-content {
     text-align: center;
 }
@@ -132,12 +125,38 @@ h3 i {
     font-style: italic;
 }
 
-/* Simple frame for photo */
+.photo-container {
+    position: relative;
+    display: inline-block;
+}
+
 .simple-frame {
     padding: 20px;
     background: linear-gradient(135deg, var(--deep-wine), var(--medium-wine));
     border-radius: 15px;
-    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+        20px 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 60px rgba(181, 151, 133, 0.2);
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.simple-frame::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, 
+        transparent, 
+        rgba(181, 151, 133, 0.1), 
+        transparent);
+    z-index: -1;
+    animation: rotate 20s linear infinite;
+    border-radius: 20px;
 }
 
 .photo {
@@ -146,9 +165,79 @@ h3 i {
     border-radius: 10px;
     display: block;
     border: 10px solid var(--dark-charcoal);
+    animation: photoBorder 8s ease-in-out infinite;
+    transform-origin: center;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
 }
 
-/* About Section */
+.photo:hover {
+    animation-play-state: paused;
+    transform: scale(1.03);
+    border-color: var(--warm-beige);
+}
+
+.photo-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(181, 151, 133, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulseGlow 3s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        box-shadow: 
+            20px 20px 40px rgba(0, 0, 0, 0.3),
+            0 0 60px rgba(181, 151, 133, 0.2);
+    }
+    50% {
+        transform: translateY(-20px) rotate(0.5deg);
+        box-shadow: 
+            25px 25px 50px rgba(0, 0, 0, 0.4),
+            0 0 80px rgba(181, 151, 133, 0.3);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes photoBorder {
+    0%, 100% {
+        border-width: 10px;
+        border-color: var(--dark-charcoal);
+    }
+    50% {
+        border-width: 12px;
+        border-color: rgba(181, 151, 133, 0.3);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
 .about-section {
     flex-direction: column;
     text-align: center;
@@ -174,7 +263,6 @@ h3 i {
     border-left: 4px solid var(--warm-beige);
 }
 
-/* Skills Section - ТРИ РАВНЫХ КОЛОНКИ */
 .skills-container {
     flex-direction: column;
     height: auto;
@@ -237,7 +325,6 @@ h3 i {
     border-color: var(--cream);
 }
 
-/* Blog Section */
 #myblog img {
     max-width: 80%;
     border: 10px solid var(--warm-beige);
@@ -252,7 +339,6 @@ h3 i {
     box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Projects Section */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -273,7 +359,6 @@ h3 i {
     box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Contact Section */
 .contact {
     background: linear-gradient(135deg, var(--deep-wine) 0%, var(--medium-wine) 100%);
     color: var(--cream);
@@ -367,7 +452,6 @@ h3 i {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Social Icons - ОБНОВЛЕННЫЙ СТИЛЬ */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -434,14 +518,12 @@ h3 i {
     color: var(--warm-beige);
 }
 
-/* Animations */
 section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
     .korobka {
         padding: 0 50px;
