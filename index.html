@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +24,6 @@
         </nav>
     </header> 
 
-    <!-- Home Section -->
     <section id="home" class="hero">  
         <div class="korobka">
             <div class="home-content">
@@ -35,13 +33,15 @@
             </div>
         </div>
         <div class="korobka">
-            <div class="simple-frame">
-                <img class="photo" src="image.jpg" alt="Aidana's Photo">
+            <div class="photo-container">
+                <div class="simple-frame">
+                    <img class="photo" src="image.jpg" alt="Aidana's Photo">
+                </div>
+                <div class="photo-glow"></div>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
     <section id="aboutme" class="hero">
         <div class="korobka about-section">
             <div class="about-content">
@@ -63,7 +63,6 @@
         </div>
     </section>
 
-    <!-- Skills Section - ИСПРАВЛЕНА СЕТКА -->
     <section id="skills" class="skills">
         <div class="korobka skills-container">
             <h1>My skills</h1>
@@ -107,7 +106,6 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
     <section id="myblog" class="hero">
         <div class="korobka">
             <h1>My blog</h1>
@@ -118,7 +116,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="myprojects" class="hero">
         <div class="korobka">
             <div>
@@ -132,7 +129,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contactme" class="contact">
         <div class="container">
             <div class="contact-left">
@@ -150,7 +146,6 @@
             </div>
         </div>
         
-        <!-- Social Icons with matching style -->
         <div class="social-icons">
             <a href="https://github.com/aidanaaa11" target="_blank" class="social-link">
                 <div class="social-icon-circle">
@@ -176,7 +171,6 @@
     </section>
 
     <script>
-        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -193,9 +187,7 @@
             });
         });
 
-        // Simple animation on load
         document.addEventListener('DOMContentLoaded', function() {
-            // Fade in sections
             setTimeout(() => {
                 document.querySelectorAll('section').forEach(section => {
                     section.style.opacity = '1';
